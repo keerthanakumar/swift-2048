@@ -73,6 +73,13 @@
             ReferencedContainer = "container:swift-2048.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "APPCENTER_SECRET"
+            value = "788c25d2-1a1b-4252-be1b-3f277ca4867e"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
