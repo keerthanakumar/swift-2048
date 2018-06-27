@@ -20,8 +20,8 @@
 		1AEF46D01BAE736400119D81 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEF46CF1BAE736400119D81 /* Launch Screen.storyboard */; };
 		1AF8F0B619403AA400A7049E /* AccessoryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B519403AA400A7049E /* AccessoryViews.swift */; };
 		1AF8F0B81941841000A7049E /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */; };
-		8D0D5964648F801AE8F3F47C /* libPods-swift-2048Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D053E01ED768CD61309EC19 /* libPods-swift-2048Tests.a */; };
-		9BC2C501FB7016B00403FC4F /* libPods-swift-2048.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173CD1C18D4EE608B2C1B23E /* libPods-swift-2048.a */; };
+		D8A7C2FA831640D34D99318B /* Pods_swift_2048Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F3CAD3CAC91CC0D5B0FDC6 /* Pods_swift_2048Tests.framework */; };
+		EDA8B2FF30DA7A646895D188 /* Pods_swift_2048.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DF4DDD416210F6E9264DDD4 /* Pods_swift_2048.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 
 /* Begin PBXFileReference section */
 		0DAB7643D49AA0B8C1C3DFDB /* Pods-swift-2048.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048/Pods-swift-2048.release.xcconfig"; sourceTree = "<group>"; };
-		173CD1C18D4EE608B2C1B23E /* libPods-swift-2048.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-swift-2048.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC563DD193DCE6000402286 /* swift-2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-2048.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC563E1193DCE6000402286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AC563E2193DCE6000402286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +62,8 @@
 		1AF8F0B71941841000A7049E /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuxiliaryModels.swift; path = Models/AuxiliaryModels.swift; sourceTree = "<group>"; };
 		38E56948BF99348DA3938E14 /* Pods-swift-2048Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5C1B913B1457D794E07E239B /* Pods-swift-2048.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048/Pods-swift-2048.debug.xcconfig"; sourceTree = "<group>"; };
-		8D053E01ED768CD61309EC19 /* libPods-swift-2048Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-swift-2048Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF4DDD416210F6E9264DDD4 /* Pods_swift_2048.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_2048.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F3CAD3CAC91CC0D5B0FDC6 /* Pods_swift_2048Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_2048Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46B60B5E0B950D306160ABE /* Pods-swift-2048Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-2048Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-2048Tests/Pods-swift-2048Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC2C501FB7016B00403FC4F /* libPods-swift-2048.a in Frameworks */,
+				EDA8B2FF30DA7A646895D188 /* Pods_swift_2048.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D0D5964648F801AE8F3F47C /* libPods-swift-2048Tests.a in Frameworks */,
+				D8A7C2FA831640D34D99318B /* Pods_swift_2048Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +182,8 @@
 		BDE51DA958E4A2E6C34D409A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				173CD1C18D4EE608B2C1B23E /* libPods-swift-2048.a */,
-				8D053E01ED768CD61309EC19 /* libPods-swift-2048Tests.a */,
+				5DF4DDD416210F6E9264DDD4 /* Pods_swift_2048.framework */,
+				A1F3CAD3CAC91CC0D5B0FDC6 /* Pods_swift_2048Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -200,6 +200,7 @@
 				1AC563DA193DCE6000402286 /* Frameworks */,
 				1AC563DB193DCE6000402286 /* Resources */,
 				22A74A55D4BCA2C5FDC7682C /* [CP] Copy Pods Resources */,
+				9D9D15E1B353EB226E4152DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,7 +238,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Austin Zheng";
 				TargetAttributes = {
 					1AC563DC193DCE6000402286 = {
@@ -346,6 +347,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D9D15E1B353EB226E4152DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swift-2048/Pods-swift-2048-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Keys/Keys.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Keys.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swift-2048/Pods-swift-2048-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -412,12 +431,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -465,12 +486,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -536,7 +559,7 @@
 			baseConfigurationReference = D46B60B5E0B950D306160ABE /* Pods-swift-2048Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/swift-2048.app/swift-2048";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -557,7 +580,7 @@
 			baseConfigurationReference = 38E56948BF99348DA3938E14 /* Pods-swift-2048Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/swift-2048.app/swift-2048";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "swift-2048Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;

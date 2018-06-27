@@ -11,6 +11,7 @@ import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
 import AppCenterDistribute
+import Keys
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,16 +19,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    var keys = Swift2048Keys();
+    
+    
+    if (keys.appCenterProd == "No") {
+        MSAppCenter.setLogUrl(keys.appCenterLogURL);
+        MSDistribute.setApiUrl(keys.appCenterDistributeApi);
+        MSDistribute.setInstallUrl(keys.appCenterDistributeInstallUrl);
+    }
+    
+    #if DEBUG
+    MSAppCenter.start(keys.appCenterSecret, withServices:[
+        MSAnalytics.self,
+        MSCrashes.self
+        ])
+    #else
+    MSAppCenter.start(keys.appCenterSecret, withServices: [MSAnalytics.self,
+                                                           MSCrashes.self,
+                                                           MSDistribute.self])
+    #endif
     return true
   }
-    
-    func applicationDidFinishLaunching(_ application: UIApplication) {
-        MSAppCenter.start(ProcessInfo.processInfo.environment["APPCENTER_SECRET"], withServices:[
-            MSAnalytics.self,
-            MSCrashes.self,
-            MSDistribute.self
-        ])
-    }
 
   func applicationWillResignActive(_ application: UIApplication) {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
